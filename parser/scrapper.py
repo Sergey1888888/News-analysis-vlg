@@ -2,8 +2,13 @@ import asyncio
 import datetime
 import re
 from pyppeteer import launch
+from pymongo import MongoClient
 
 async def main():
+    client = MongoClient('45.11.24.111', username='mongo-root', password='passw0rd', authSource='admin')
+    print(client)
+    db = client.news
+    data = db.data
     browser = await launch({'args': ['--disable-setuid-sandbox', '--disable-infobars', '--window-position=0,0', '--ignore-certifcate-errors', '--ignore-certifcate-errors-spki-list', '--user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"'], 'headless': False})
     page = await browser.newPage()
     await page.setViewport({
@@ -46,12 +51,6 @@ async def main():
         texts.append(text)
         date = re.search(r'[\d]*-[\d]*-[\d]+', el)
         dates.append(date.group())
-        # elements = await page.querySelectorAll('.ct-meta')
-        # date = await page.evaluate('(element) => element.textContent', await elements[0].querySelector('span'))
-        # if (str(date).find("Вчера") != -1):
-        #     dates.append(yesterday)
-        # else:
-        #     dates.append(date)
         print(el)
         print(text)
     for el in titles:
@@ -59,5 +58,6 @@ async def main():
     for el in dates:
         print(el)
     await browser.close()
-
+    for i in range(0, len(titles)):
+        data.update({u'newsDate': dates[i], u'newsName': titles[i], u'newsLink': newsLinks[i], u'newsText': texts[i]}, { u'$setOnInsert': { u'newsDate': dates[i], u'newsName': titles[i], u'newsLink': newsLinks[i], u'newsText': texts[i], u'forAnalysis': False } }, **{ 'upsert': True })
 asyncio.get_event_loop().run_until_complete(main())
