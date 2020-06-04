@@ -17,3 +17,4 @@
 ### Заборонок С.В.
 <a href="https://github.com/Sergey1888888"><img src="https://avatars1.githubusercontent.com/u/46000753?s=460&u=74455c181555b9ab85d37c357a33b367e02240aa&v=4"  width="50" height="50"> </a>
 ### Хаиров Р.М.
+<a href="https://github.com/Usvel"><img src="https://avatars3.githubusercontent.com/u/49621372?s=460&v=4"  width="50" height="50"> </a>
