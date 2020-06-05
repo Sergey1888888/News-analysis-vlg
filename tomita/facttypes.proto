@@ -4,11 +4,11 @@ import "facttypes_base.proto"; // описание protobuf-типа NFactType.T
 message Person: NFactType.TFact 
 {
   required string FIO = 1;
-  optional string Position = 2;
+  optional string Text = 2;
 }
 
 message Attractions: NFactType.TFact 
 {
   required string Name = 1;
-  optional string Type = 2;
+  optional string Text = 2;
 }

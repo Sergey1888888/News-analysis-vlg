@@ -1,0 +1,31 @@
+encoding "utf8";               // указываем кодировку, в которой написан этот файл
+
+import "base.proto";           // подключаем описания protobuf-типов (TAuxDicArticle и прочих)
+import "articles_base.proto";  // Файлы base.proto и articles_base.proto встроены в компилятор.
+                               // Их необходимо включать в начало любого gzt-словаря.
+import "facttypes.proto";
+
+
+TAuxDicArticle "фио"
+{
+    key =  { "personFIO.txt" type=FILE }
+}
+
+
+TAuxDicArticle "персоны"
+{
+    key = { "tomita:person.cxx" type=CUSTOM }
+}
+
+TAuxDicArticle "дост_названия"
+{
+    key =  { "attractionsNames.txt" type=FILE }
+}
+
+
+TAuxDicArticle "достопримечательности"
+{
+    key = { "tomita:attractions.cxx" type=CUSTOM }
+}
+
+
