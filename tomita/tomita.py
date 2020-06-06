@@ -1,28 +1,19 @@
 from pymongo import MongoClient
-from bson.json_util import loads, dumps
 import subprocess
 import re
+import sys
+sys.path.append("..")
+from modeldb import Connection, Mongo
 
-def find_document(collection, elements, multiple=False):
-    """ Function to retrieve single or multiple documents from a provided
-    Collection using a dictionary containing a document's elements.
-    """
-    if multiple:
-        results = collection.find(elements)
-        return [r for r in results]
-    else:
-        return collection.find_one(elements)
+conn = Connection('45.11.24.111', 27017, 'passw0rd', 'mongo-root').getConnection()
+db = Mongo(conn,'news')
 
-client = MongoClient('45.11.24.111', username='mongo-root', password='passw0rd', authSource='admin')
-db = client.news
-collection = db.data
-print(collection)
-posts = db.data
+textForAnalysis = db.find_document('data', {'forAnalysis': False}, True)
 
-result = find_document(posts, {'forAnalysis': False}, True)
 # запись текста новостей в файл для томиты
 f = open('input.txt', 'w')
-for text in result:
+for text in textForAnalysis:
+   
     f.write(text.get("newsText")+'\n')
 
 f.close()
@@ -34,9 +25,8 @@ out = out.decode("utf-8", "strict")
 
 
 result = re.findall(r'(Person|Attractions)[\n\s{]*(FIO[\s=а-яёА-яa-zA-Z0-9]+|Name[\s=а-яА-яёa-zA-Z0-9]+)(Text[\s=а-яА-яёa-z0-9№A-Z,!.?\"\-—–]+)',out )
-
+facts = []
 for fact in result:
-    
     if fact[0] == 'Person':
         a = fact[1][6:-3]
     elif  fact[0] == 'Attractions':
@@ -45,6 +35,6 @@ for fact in result:
     str = '_'.join(b)
     c = fact[2][7:-2]
     mystr = c.replace(a,str)
-    print(mystr)
-    print("\n")
+    facts.append({'newsWithMention': mystr})
 
+db.insert_document('test',facts,True)
