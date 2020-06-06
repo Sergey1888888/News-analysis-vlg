@@ -30,11 +30,11 @@ def tomita():
                 a = fact[1][6:-3]
             elif  fact[0] == 'Attractions':
                 a = fact[1][7:-3]
-            b = a.split(' ')
-            str = '_'.join(b)
+
+
             c = fact[2][7:-2]
-            mystr = c.replace(a,str)
-            facts.append({'newsWithMention': mystr})
+
+            facts.append({'newsWithMention': c})
 
         conn['news'].data.update_many({'forAnalysis': True}, {"$set":{ 'forAnalysis': False}})
         db.insert_document('analysis',facts,True)
