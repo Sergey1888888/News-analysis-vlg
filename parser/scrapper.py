@@ -9,7 +9,7 @@ async def main():
     print(client)
     db = client.news
     data = db.data
-    browser = await launch({'args': ['--disable-setuid-sandbox', '--disable-infobars', '--window-position=0,0', '--ignore-certifcate-errors', '--ignore-certifcate-errors-spki-list', '--user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"'], 'headless': False})
+    browser = await launch({'args': ['--no-sandbox', '--disable-setuid-sandbox', '--disable-infobars', '--ignore-certifcate-errors', '--ignore-certifcate-errors-spki-list', '--user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"']})
     page = await browser.newPage()
     await page.setViewport({
         'width': 1200,
