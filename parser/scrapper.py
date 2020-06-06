@@ -59,5 +59,5 @@ async def main():
         print(el)
     await browser.close()
     for i in range(0, len(titles)):
-        data.update({u'newsDate': dates[i], u'newsName': titles[i], u'newsLink': newsLinks[i], u'newsText': texts[i]}, { u'$setOnInsert': { u'newsDate': dates[i], u'newsName': titles[i], u'newsLink': newsLinks[i], u'newsText': texts[i], u'forAnalysis': False } }, **{ 'upsert': True })
+        data.update({u'newsDate': dates[i], u'newsName': titles[i], u'newsLink': newsLinks[i], u'newsText': texts[i]}, { u'$setOnInsert': { u'newsDate': dates[i], u'newsName': titles[i], u'newsLink': newsLinks[i], u'newsText': texts[i], u'forAnalysis': True } }, **{ 'upsert': True })
 asyncio.get_event_loop().run_until_complete(main())
