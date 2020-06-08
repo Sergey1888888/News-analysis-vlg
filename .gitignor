@@ -1,0 +1,10 @@
+vscode
+.idea
+
+# tomita-parser
+input.txt
+
+__pycache__/
+
+*.bin
+libmystem_c_binding.so
