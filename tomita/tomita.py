@@ -2,11 +2,15 @@ from pymongo import MongoClient
 import subprocess
 import re
 import sys
+from bson.objectid import ObjectId
 from per_attract_to_txt import checkPersons, checkPlaces
 
-def tomita(db):
-
-    textForAnalysis = db.data.find({"forAnalysis": True})
+def findFact(id):
+    client = MongoClient('45.11.24.111', username='mongo-root', password='passw0rd', authSource='admin')
+    db = client.news
+    checkPersons(db)
+    checkPlaces(db)
+    textForAnalysis = db.dalolokjta.find_one({"_id": ObjectId(id)})
     if textForAnalysis.count(True) > 0:
 
         i = 0
@@ -20,7 +24,7 @@ def tomita(db):
             out, err = p.communicate()
             out = out.decode("utf-8", "strict")
             result = re.findall(r'(Person|Attractions)[\n\s{]*(FIO[\s=а-яёА-яa-zA-Z0-9]+|Name[\s=а-яА-яёa-zA-Z0-9]+)(Text[\s=а-яА-яёa-z0-9№A-Z,!.?\"\-—–]+)',out )
-            b.data.update_one({"_id": fact.get("_id")},{"$set":{"forAnalysis": False}})
+            b.lolokj.update_one({"_id": fact.get("_id")},{"$set":{"forAnalysis": True}})
 
             if not result:
                 continue
@@ -35,12 +39,3 @@ def tomita(db):
             
     else: 
         print('Нету новый новостей')
-
-def check(parameter_list):
-    pass
-if __name__ == '__main__':
-    client = MongoClient('45.11.24.111', username='mongo-root', password='passw0rd', authSource='admin')
-    db = client.news
-    checkPersons(db)
-    checkPlaces(db)
-    tomita(db)

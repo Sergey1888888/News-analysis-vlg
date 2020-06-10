@@ -6,8 +6,33 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
+    <!-- Just an image -->
+<nav class="navbar navbar-light bg-light">
+    <div class="container">   <a class="navbar-brand" href="#">
+        <img src="https://pbs.twimg.com/media/D4qhjRFXkAAaCGn.jpg" width="30" height="30" alt="" loading="lazy">
+      </a></div>
+  </nav>
+    <div class="container">
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for message in news %}
+          <tr>
+            <th scope="row">{{loop.index0 +1 }}</th>
+            <td><a href="news/{{message._id}}">{{message.newsName}}</a></td>
+            <td>{{message.newsDate}}</td>
+          </tr>
 
-  <p>Name: {{ name }}</p>
-
+          {% endfor %}
+        </tbody>
+      </table>
+      <button type="button" class="btn btn-info btn-lg btn-block">Еще....</button>
+    </div>
 </body>
 </html>
