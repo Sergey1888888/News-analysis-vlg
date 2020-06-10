@@ -1,98 +1,68 @@
-PATH = 'data_news/*.txt'
+PATH = 'model/kurs_model/'
 from pyspark.sql import SparkSession
-from pyspark.ml.feature import Tokenizer
-from pyspark.ml.feature import StopWordsRemover
-from pyspark.ml.feature import Word2Vec
-import re
-import string
-import datetime
+from pyspark.ml.feature import Word2VecModel
+from pprint import pprint
 
-def remove_punctuation(text):
-    """
-    Удаление пунктуации из текста
-    """
-    return text.translate(str.maketrans('', '', string.punctuation))
+import w2v
+import os
+import sys
 
 
-def get_only_words(tokens):
-    """
-    Получение списка токенов, содержащих только слова
-    """
-    return list(filter(lambda x: re.match('[а-яёА-Я]+', x), tokens))
+def get_synonyms(elements, count, model, spark_session):
+    result = []
+    for element in elements:
+        try:
+            elementDF = spark_session.createDataFrame([
+                (element.lower().split(" "),)], ["words"])
+            transform_elem = model.transform(elementDF)
+            synonyms = model.findSynonyms(transform_elem.collect()[0][1], count).collect()
+            result.append(synonyms)
+        except Exception:
+            result.append("Синонимы не найдены")
+
+    return result
 
 
-def create_w2v_model():
+def print_elem(elements, elements_synonyms):
+    for i in range(len(elements_synonyms)):
+        pprint("-" * 30)
+        pprint(elements[i][0])
+        for el in elements_synonyms[i]:
+            print(el[0])
+
+
+
+
+def main():
+    if (not os.path.exists('model')):
+        if (not os.path.exists('data_text')):
+            print("Папка создана")
+            os.mkdir('data_text')
+        save_txt.save_text_db_to_txt(db_con)
+
+        word2vec.create_w2v_model()
+
+    persons = ["Бочаров", "Алимов"]
+    # places = get_places(db_con)
+
     spark = SparkSession \
         .builder \
         .appName("SimpleApplication") \
-        .config("spark.executor.memory", "6g") \
-        .config("spark.driver.memory", "6g") \
-        .config("spark.memory.offHeap.enabled", True) \
-        .config("spark.memory.offHeap.size", "6g") \
         .getOrCreate()
 
-    input_file = spark.sparkContext.wholeTextFiles(PATH)
+    model = Word2VecModel.load(PATH)
 
-    print("""
-    
-    Подготовка данных (1)...
-    
-    """)
-    prepared_data = input_file.map(lambda x: (x[0], remove_punctuation(x[1])))
+    pprint("Поиск контекстных синонимов персон:")
+    persons_synonyms = get_synonyms(persons, 5, model, spark)
+    print_elem(persons, persons_synonyms)
 
-    print("""
-    
-    Подготовка данных (2)...
-    
-    """)
-    df = prepared_data.toDF()
-
-    print("""
-    
-    Подготовка данных (3)...
-    
-    """)
-    prepared_df = df.selectExpr('_2 as text')
-
-    print("""
-    
-    Разбитие на токены...
-    
-    """)
-    tokenizer = Tokenizer(inputCol='text', outputCol='words')
-    words = tokenizer.transform(prepared_df)
-
-    print("""
-    
-    Очистка от стоп-слов...
-    
-    """)
-    stop_words = StopWordsRemover.loadDefaultStopWords('russian')
-    remover = StopWordsRemover(inputCol="words", outputCol="filtered", stopWords=stop_words)
-
-    print("""
-    
-    Построение модели...
-    
-    """)
-    word2Vec = Word2Vec(vectorSize=50, inputCol='words', outputCol='result', minCount=2)
-    model = word2Vec.fit(words)
-
-    print("""
-    
-    Сохранение модели...
-    
-    """)
-    today = datetime.datetime.today()
-    model_name = today.strftime("model/kurs_model")
-    print("""
-    
-    Model  """ + model_name + """  saved
-    
-    """)
-    model.write().overwrite().save(model_name)
+    # pprint("Поиск контекстных синонимов достопримечательностей:")
+    # places_synonyms = get_synonyms(places, 5, model, spark)
+    # insert_to_places_synonyms(db_con, places, places_synonyms)
+    # print_elem(places, places_synonyms)
 
     spark.stop()
 
+
 if __name__ == '__main__':
-    create_w2v_model()
+    main()
