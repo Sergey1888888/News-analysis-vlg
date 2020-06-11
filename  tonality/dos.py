@@ -18,4 +18,6 @@ messages = [
 results = model.predict(messages, k=1)
 
 for message, sentiment in zip(messages, results):
+# результат
+
     print(sentiment.keys())
