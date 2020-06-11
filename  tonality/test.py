@@ -55,7 +55,6 @@ if __name__ == "__main__":
     positive_tweets = pd.read_csv('C:/Users/Usvel/Desktop/untitled/positive.csv', sep=';', error_bad_lines=False, names=n, usecols=['text'])[:100]
     negative_tweets = pd.read_csv('C:/Users/Usvel/Desktop/untitled/negative.csv', sep=';', error_bad_lines=False, names=n, usecols=['text'])[:100]
 
-
     stop_words = stopwords.words('russian')
 
     positive_tweet_tokens = tokenizer(negative_tweets.text);
@@ -102,17 +101,8 @@ if __name__ == "__main__":
 
     custom_tokens = lemmatize_sentence(custom_tweet)
 
-    # # now you can save it to a file
-    # joblib.dump(classify, 'filename.pkl')
-    # # and later you can load it
-    # classifier1 = joblib.load('filename.pkl')
-    # now you can save it to a file with
     with open('filename.pkl', 'wb') as f: pickle.dump(classifier, f)
-    # and later you can load it with
-    with open('filename.pkl', 'rb') as f:
-        clf = pickle.load(f)
 
     print(custom_tweet, classifier.classify(dict([token, True] for token in custom_tokens)))
-    print(custom_tweet, clf.classify(dict([token, True] for token in custom_tokens)))
 
 
