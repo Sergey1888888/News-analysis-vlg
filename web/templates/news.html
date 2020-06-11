@@ -7,10 +7,16 @@
 </head>
 <body>
     <div class="container">
-        <p class="text-center">{{news.newsName}}<a href="{{news.newsLink}}">(ссылка)</a></p>
+        <p class="text-center">{{news.newsName}}<a href="{{news.newsLink}}" target="_blank" >(ссылка)</a></p>
         <p class="text-justify">{{news.newsText}}</p>
         <p class="text-right">{{news.newsDate}}</p>
-        {{fact.newsWithMention}}
+          {% if facts|length != 0 %}
+              {% for fact in facts%}
+                {{fact}}<br>
+              {% endfor %}
+          {% else %}
+              Фактов нету
+          {% endif %}
     </div>
 
 
