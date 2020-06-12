@@ -3,27 +3,23 @@ from dostoevsky.models import FastTextSocialNetworkModel
 from pymongo import MongoClient
 import re
 
-# client = MongoClient('45.11.24.111', username='mongo-root', password='passw0rd', authSource='admin')
-# db = client.news
-# data = db.analysis
-# result = data.find({})
+client = MongoClient('45.11.24.111', username='mongo-root', password='passw0rd', authSource='admin')
+db = client.news
+data = db.analysis
+result = data.find()
 
-tokenizer = RegexTokenizer()
-#tokens = tokenizer.split('всё очень плохо')  # [('всё', None), ('очень', None), ('плохо', None)]
+def getTonality(messages):
+    tokenizer = RegexTokenizer()
+    model = FastTextSocialNetworkModel(tokenizer=tokenizer)
+    results = model.predict(messages, k=1)
+    regex = r"[\w]+\(\['([\w]+)'\]\)"
+    # результат
+    for message, sentiment in zip(messages, results):
+        match = re.search(regex, str(sentiment.keys()))
+        return match.group(1)
 
-model = FastTextSocialNetworkModel(tokenizer=tokenizer)
-
-#сюда текст
-messages = [
-    'На сегодняшнем брифинге замглавы облздрава Николай Алимов уточнил, что в инфекционных госпиталях сейчас находятся 1680 пациентов с подтвержденным коронавирусом.',
-    'Об этом в среду рассказал зампредседателя комитета здравоохранения Волгоградской области Николай Алимов.',
-    'Я тебя люблю!'
-]
-
-results = model.predict(messages, k=1)
-
-regex = r"[\w]+\(\['([\w]+)'\]\)"
-# результат
-for message, sentiment in zip(messages, results):
-    match = re.search(regex, str(sentiment.keys()))
-    print(match.group(1))
+for arrays in result:
+    id = arrays['_id']
+    messages = arrays['newsWithMention']
+    result = getTonality(messages)
+    db.testik.insert({u'_id': id, u'tonality': result}, {u'$setOnInsert': {u'_id': id, u'tonality': result}, **{u'upsert': True}})
