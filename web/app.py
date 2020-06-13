@@ -13,11 +13,15 @@ def index():
     return render_template('index.html', news=db.data.find().limit(200))
 @app.route('/news/<id>/')
 def news_id(id):
-    if db.analysis.find_one({"_id": ObjectId(id)}) is None:
-        findFact(id)
+    
     fact = db.analysis.find_one({"_id": ObjectId(id)})
-    print(type(fact))
-    return render_template('news.html', news = db.data.find_one({'_id': ObjectId(id)}), facts = fact )
+    tonality = db.tonality.find_one({"_id": ObjectId(id)})
+    print(tonality.get('tonality') )
+
+    if fact is None:
+        fact = 0
+ 
+    return render_template('news.html', news = db.data.find_one({'_id': ObjectId(id)}), facts = fact.get('newsWithMention'), tonal = tonality.get('tonality') )
 
 # @app.route('api/getNews/', methods=['GET'])
 # def get_news():
