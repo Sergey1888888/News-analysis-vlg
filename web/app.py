@@ -1,6 +1,7 @@
 from flask import Flask, request, render_template, json
 from flask import jsonify, send_from_directory
 from pymongo import MongoClient
+import pymongo
 import json
 from bson.objectid import ObjectId
 import datetime
@@ -24,7 +25,7 @@ def skiplimit(db, collection, page_size, page_num):
     skips = page_size * (page_num - 1)
 
     # Skip and limit
-    cursor = db[collection].find().skip(skips).limit(page_size)
+    cursor = db[collection].find().sort("_id", pymongo.DESCENDING).skip(skips).limit(page_size)
 
     # Return documents
     return [x for x in cursor]
@@ -34,7 +35,7 @@ def skiplimit(db, collection, page_size, page_num):
 
 @app.route('/')
 def index():
-    return render_template('index.html', news=db.data.find().limit(15))
+    return render_template('index.html', news=db.data.find().sort("_id", pymongo.DESCENDING).limit(15))
 @app.route('/news/<id>/')
 def news_id(id):
     
@@ -52,6 +53,10 @@ def news_id(id):
 def facts():
     return render_template('facts.html', facts=db.analysis.find().limit(15))
 
+@app.route('/w2v/')
+def synonyms():
+    return render_template('w2v.html')
+
 @app.route('/api/getNews/<page_num>/', methods=['GET'])
 def get_news(page_num):
     news = skiplimit(db,"data", 15,int(page_num))
@@ -63,6 +68,12 @@ def get_facts(page_num):
     news = skiplimit(db,"analysis",15,int(page_num))
     result = JSONEncoder().encode(news)
     return jsonify(result)
+
+@app.route('/api/getSynm/<word>/', methods=['GET'])
+def get_synm(word):
+
+    return jsonify(db.synonyms.find_one({"word": word.lower()}).get('synom'))
+
 
 # jsonify
 if __name__ == "__main__":

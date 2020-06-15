@@ -1,49 +1,44 @@
-PATH = 'model/kurs_model/'
+PATH = '../word2vec/model/kurs_model/'
 from pyspark.sql import SparkSession
 from pyspark.ml.feature import Word2VecModel
 from pprint import pprint
-
+from pymongo import MongoClient
+from dbtext import newsToText
 import w2v
 import os
 import sys
 
 
+client = MongoClient('45.11.24.111', username='mongo-root', password='passw0rd', authSource='admin')
+db = client.news
+
+
 def get_synonyms(elements, count, model, spark_session):
     result = []
     for element in elements:
+        a = db.synonyms.insert_one({"word": element})
         try:
-            elementDF = spark_session.createDataFrame([
-                (element.lower().split(" "),)], ["words"])
-            transform_elem = model.transform(elementDF)
-            synonyms = model.findSynonyms(transform_elem.collect()[0][1], count).collect()
+            synonyms = model.findSynonyms(element, count).collect()
+            for syn in synonyms:
+               db.synonyms.update_one({'_id': a.inserted_id },{"$push": {'synom': syn[0] } })
             result.append(synonyms)
         except Exception:
+            db.synonyms.update_one({'_id': a.inserted_id },{"$push": {'synom': "Синонимы не найдены" } })
             result.append("Синонимы не найдены")
-
+    print(result)
     return result
 
 
-def print_elem(elements, elements_synonyms):
-    for i in range(len(elements_synonyms)):
-        pprint("-" * 30)
-        pprint(elements[i][0])
-        for el in elements_synonyms[i]:
-            print(el[0])
-
-
-
-
-def main():
-    if (not os.path.exists('model')):
+def main(word):
+    
+    if (not os.path.exists('../word2vec/model')):
         if (not os.path.exists('data_text')):
             print("Папка создана")
             os.mkdir('data_text')
-        save_txt.save_text_db_to_txt(db_con)
+        newsToText(db.data)
 
         word2vec.create_w2v_model()
 
-    persons = ["Бочаров", "Алимов"]
-    # places = get_places(db_con)
 
     spark = SparkSession \
         .builder \
@@ -52,17 +47,6 @@ def main():
 
     model = Word2VecModel.load(PATH)
 
-    pprint("Поиск контекстных синонимов персон:")
-    persons_synonyms = get_synonyms(persons, 5, model, spark)
-    print_elem(persons, persons_synonyms)
-
-    # pprint("Поиск контекстных синонимов достопримечательностей:")
-    # places_synonyms = get_synonyms(places, 5, model, spark)
-    # insert_to_places_synonyms(db_con, places, places_synonyms)
-    # print_elem(places, places_synonyms)
-
+    res = get_synonyms(word,5,model,spark)
     spark.stop()
-
-
-if __name__ == '__main__':
-    main()
+    return res

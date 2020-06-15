@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
-  <script src="{{ url_for('static', filename='js/news.js') }}" ></script>
+  <script src="{{ url_for('static', filename='js/synms.js') }}" ></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 <body>
@@ -23,28 +23,11 @@
     </nav>
   </div>
     <div class="container">
-    <table class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Title</th>
-            <th scope="col">Date</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for message in news %}
-          <tr>
-            <th scope="row" class = "rows">{{loop.index0 +1 }}</th>
-            <td><a href="news/{{message._id}}">{{message.newsName}}</a></td>
-            <td>{{message.newsDate}}</td>
-            
-          </tr>
-
-          {% endfor %}
-        </tbody>
-      </table>
-      <button type="button" id="more"class="btn btn-info btn-lg btn-block">Еще....</button>
+        <h1 class="text-center">Поиск контекстных синонимов</h1>
+        <input class="form-control" id="word" type="text" placeholder="Введите слово для поиска контекстного синонима">
+        <button type="button" id = "syn" class="btn btn-success btn-lg btn-block">Поиск</button>
     </div>
-   
+
+
 </body>
 </html>

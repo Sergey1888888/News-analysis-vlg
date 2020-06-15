@@ -1,17 +1,35 @@
 from pymongo import MongoClient
 import subprocess
 import re
-
+import os
 import sys
 from bson.objectid import ObjectId
-from getText import checkPersons,  checkPlaces
+
+def checkPersons(db):
+    if not os.path.isfile('personFIO.txt'):
+        f = open ('personFIO.txt', 'w')
+        person = db.person.find()
+        for text in person:
+            f.write(text.get("personName") +'\n')
+        f.close()
+
+
+def checkPlaces(db):
+    if not os.path.isfile('attractionsNames.txt'):
+        f = open ('attractionsNames.txt', 'w')
+        attractions = db.attractions.find()
+        for text in attractions:
+            f.write(text.get("attractionsNames") +'\n')
+        f.close()
 
 
 def findFact(id = None ):
     client = MongoClient('45.11.24.111', username='mongo-root', password='passw0rd', authSource='admin')
     db = client.news
+    os.chdir("../tomita")
     checkPersons(db)
     checkPlaces(db)
+
     if id is None:
         textForAnalysis = db.data.find({"forAnalysis": True})
     else:
@@ -36,17 +54,16 @@ def findFact(id = None ):
 
             if not result:
                 continue
-            db.analysis.insert_one({'_id': fact.get('_id')})
+            db.analysis.insert_one({'_id': fact.get('_id'), 'forTonality': True})
             res = []
             for f in result:
                 c = f[2][7:-2]
-
+                print(c)
                 db.analysis.update_one({'_id': fact.get('_id')},{"$push": {'newsWithMention': c} })
             
     else: 
         print('Нету новый новостей на анализ')
+        
 
-
-findFact()
 
 

@@ -94,5 +94,3 @@ def create_w2v_model():
 
     spark.stop()
 
-if __name__ == '__main__':
-    create_w2v_model()

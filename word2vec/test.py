@@ -5,7 +5,7 @@ from pyspark.sql import SparkSession
 from pyspark.ml.feature import Word2VecModel
 from pprint import pprint
 
-test_words = ["лукьяненко"]
+test_words = ["алимов"]
 
 spark = SparkSession \
     .builder \

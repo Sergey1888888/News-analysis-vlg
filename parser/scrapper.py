@@ -53,11 +53,10 @@ async def main():
         dates.append(date.group())
         print(el)
         print(text)
-    for el in titles:
-        print(el)
-    for el in dates:
-        print(el)
     await browser.close()
     for i in range(0, len(titles)):
         data.update({u'newsDate': dates[i], u'newsName': titles[i], u'newsLink': newsLinks[i], u'newsText': texts[i]}, { u'$setOnInsert': { u'newsDate': dates[i], u'newsName': titles[i], u'newsLink': newsLinks[i], u'newsText': texts[i], u'forAnalysis': True } }, **{ 'upsert': True })
-asyncio.get_event_loop().run_until_complete(main())
+
+def run():
+    asyncio.get_event_loop().run_until_complete(main())
+    print('парсинг закончин')
