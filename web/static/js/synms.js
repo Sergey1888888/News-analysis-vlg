@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const synm = document.getElementById('syn')
     synm.addEventListener('click',async(event)=>{
         const res = await fetch(`/api/getSynm/${word.value}`)
-        console.log(res)
+ 
         const words = await res.json()
         addNewWords(words)
     })
@@ -13,9 +13,11 @@ document.addEventListener("DOMContentLoaded", () => {
 function addNewWords(words) {
     const cont = document.getElementsByTagName('tbody')[0]
     const elements = document.getElementsByTagName('tr')
-    if (elements.length > 0) {
-        for(let el of elements) {
-            el.remove()
+    if (elements.length > 1) {
+
+        for (let i = 1; i != elements.length;)
+        {
+            elements[i].remove()
         }
         for(let a of words) {
             let tr = document.createElement('tr')
