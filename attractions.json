@@ -1,0 +1,311 @@
+[{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d796"
+  },
+  "attractionsNames": "Авангард"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d797"
+  },
+  "attractionsNames": "Областная универсальная научная библиотека им. М. Горького"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d798"
+  },
+  "attractionsNames": "ОУНБ им. М. Горького"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d799"
+  },
+  "attractionsNames": "Площадь Павших Борцов"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d79a"
+  },
+  "attractionsNames": "Памятник Саше Филиппову"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d79b"
+  },
+  "attractionsNames": "Музей истории Кировского района"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d79c"
+  },
+  "attractionsNames": "Памятник чекистам"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d79d"
+  },
+  "attractionsNames": "церковь Святого Георгия"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d79e"
+  },
+  "attractionsNames": "Трамвай-памятник"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d79f"
+  },
+  "attractionsNames": "Воинский эшелон"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7a0"
+  },
+  "attractionsNames": "Мельница Гергардта"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7a1"
+  },
+  "attractionsNames": "Памятник Дзержинскому"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7a2"
+  },
+  "attractionsNames": "Здание Царицынской пожарной команды Каланча Царицынской Пожарной Команды"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7a3"
+  },
+  "attractionsNames": "Дом Павлова"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7a4"
+  },
+  "attractionsNames": "Челябинский колхозник"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7a5"
+  },
+  "attractionsNames": "Памятник Гоголю"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7a6"
+  },
+  "attractionsNames": "БК-13"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7a7"
+  },
+  "attractionsNames": "Бейт Давид"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7a8"
+  },
+  "attractionsNames": "Бармалей"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7a9"
+  },
+  "attractionsNames": "Лысая гора"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7aa"
+  },
+  "attractionsNames": "Элеватор"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7ab"
+  },
+  "attractionsNames": "Памятник Паникахе"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7ac"
+  },
+  "attractionsNames": "Казанский кафедральный собор"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7ad"
+  },
+  "attractionsNames": "Фонтан влюбленных"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7ae"
+  },
+  "attractionsNames": "Музей-квартира Луконина М.К."
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7af"
+  },
+  "attractionsNames": "Музейно-выставочный центр Красноармейского района"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7b0"
+  },
+  "attractionsNames": "Мамаев курган"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7b1"
+  },
+  "attractionsNames": "Речной пор"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7b2"
+  },
+  "attractionsNames": "Реч. порт"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7b3"
+  },
+  "attractionsNames": "Царицынская опера"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7b4"
+  },
+  "attractionsNames": "Музей истории здравоохранения"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7b5"
+  },
+  "attractionsNames": "Музей Дети Царицына Сталинграда Волгограда"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7b6"
+  },
+  "attractionsNames": "Народный музей Волгоградских железнодорожников"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7b7"
+  },
+  "attractionsNames": "Музей авиации"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7b8"
+  },
+  "attractionsNames": "Выставочный зал Волгоградского музея изобразительных искусств им. И.И.Машкова"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7b9"
+  },
+  "attractionsNames": "Военно-патриотический музей истории связи и радиолюбительства Царицына-Сталинграда-Волгограда"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7ba"
+  },
+  "attractionsNames": "Парк имени Юрия Гагарина"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7bb"
+  },
+  "attractionsNames": "Музей истории Волго-Донского судоходного канала"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7bc"
+  },
+  "attractionsNames": "Выставочный зал Волгоградской областной организации союза художников России"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7bd"
+  },
+  "attractionsNames": "Парк Победы"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7be"
+  },
+  "attractionsNames": "Комсомольский сад"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7bf"
+  },
+  "attractionsNames": "Детский городской парк"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7c0"
+  },
+  "attractionsNames": "Сквер имени Саши Филиппова"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7c1"
+  },
+  "attractionsNames": "Парк Дружбы: Волгоград-Баку"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7c2"
+  },
+  "attractionsNames": "Зал Воинской Славы"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7c3"
+  },
+  "attractionsNames": "Ботанический сад ВГСПУ"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7c4"
+  },
+  "attractionsNames": "ЦПКиО"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7c5"
+  },
+  "attractionsNames": "Музей музыкальных инструментов им. Е.Н. Пушкина"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7c6"
+  },
+  "attractionsNames": "Музей мер и весов"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7c7"
+  },
+  "attractionsNames": "Областной краеведческий музей"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7c8"
+  },
+  "attractionsNames": "Музей-заповедник Старая Сарепта"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7c9"
+  },
+  "attractionsNames": "Планетарий"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7ca"
+  },
+  "attractionsNames": "музей Память"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7cb"
+  },
+  "attractionsNames": "Волгоградский музей изобразительных искусств им. И.И. Машкова"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7cc"
+  },
+  "attractionsNames": "Волгоградский музей изобразительных искусств им. Ильи Машкова"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7cd"
+  },
+  "attractionsNames": "Волгоградский музей изобразительных искусств имени Ильи Машкова"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7ce"
+  },
+  "attractionsNames": "Волгоградская областная филармония"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7cf"
+  },
+  "attractionsNames": "Музей-панорама Сталинградская битва"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7d0"
+  },
+  "attractionsNames": "Мемориально-исторический музей"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7d1"
+  },
+  "attractionsNames": "Горсад"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7d2"
+  },
+  "attractionsNames": "Волгоград Арена"
+},{
+  "_id": {
+    "$oid": "5ee0620b6b3b940d1e25d7d3"
+  },
+  "attractionsNames": ""
+}]

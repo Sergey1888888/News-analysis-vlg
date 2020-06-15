@@ -1,0 +1,916 @@
+[{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85d1"
+  },
+  "personName": "Андрей БОЧАРОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85d2"
+  },
+  "personName": "Зина МЕРЖОЕВА"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85d3"
+  },
+  "personName": "Роман БЕКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85d4"
+  },
+  "personName": "Василий ИВАНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85d5"
+  },
+  "personName": "Руслан ШАРИФОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85d6"
+  },
+  "personName": "Александр ДОРЖДЕЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85d7"
+  },
+  "personName": "Анатолий ВАСИЛЬЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85d8"
+  },
+  "personName": "Владимир ШКАРИН"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85d9"
+  },
+  "personName": "Анна ПИСЕМСКАЯ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85da"
+  },
+  "personName": "Владимир ПОПКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85db"
+  },
+  "personName": "Галина БЫКАДОРОВА"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85dc"
+  },
+  "personName": "Николай АЛИМОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85dd"
+  },
+  "personName": "Ирина ЗМАНОВСКАЯ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85de"
+  },
+  "personName": "Дмитрий ЛОКТИОНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85df"
+  },
+  "personName": "Татьяна ШИБЧЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85e0"
+  },
+  "personName": "Илья КОШКАРЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85e1"
+  },
+  "personName": "Анна ЧУПАХИНА"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85e2"
+  },
+  "personName": "Валерий БАХИН"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85e3"
+  },
+  "personName": "Андрей ГИМБАТОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85e4"
+  },
+  "personName": "Дмитрий КРЫЛОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85e5"
+  },
+  "personName": "Геннадий КУЗНЕЦОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85e6"
+  },
+  "personName": "Сергей БУЛГАКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85e7"
+  },
+  "personName": "Сергей АБРАМОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85e8"
+  },
+  "personName": "Ольга УСТИНОВА"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85e9"
+  },
+  "personName": "Махсуд СУЛТАНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85ea"
+  },
+  "personName": "Татьяна БУХТИНА"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85eb"
+  },
+  "personName": "Сергей ТОРБИН"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85ec"
+  },
+  "personName": "Виталий ЗЕМЦОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85ed"
+  },
+  "personName": "Сергей ФЕДЮШКИН"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85ee"
+  },
+  "personName": "Светлана ГОРЕЛОВА"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85ef"
+  },
+  "personName": "Лариса САВИНА"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85f0"
+  },
+  "personName": "Виталий ЛИХАЧЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85f1"
+  },
+  "personName": "Виталий ЛИХАЧЁВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85f2"
+  },
+  "personName": "Валентина ГРЕЧИНА"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85f3"
+  },
+  "personName": "Андрей КОСОЛАПОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85f4"
+  },
+  "personName": "Валерий МОГИЛЬНЫЙ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85f5"
+  },
+  "personName": "Владлен КОЛЕСНИКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85f6"
+  },
+  "personName": "Василий ГОЛУБЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85f7"
+  },
+  "personName": "Павел ГЛАДКИХ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85f8"
+  },
+  "personName": "Сергей ВЕРЕЩАГИН"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85f9"
+  },
+  "personName": "Сергей ЧЕТВЕРИКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85fa"
+  },
+  "personName": "Сергей ГОРНЯКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85fb"
+  },
+  "personName": "Виталий САЗОНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85fc"
+  },
+  "personName": "Анатолий ГУЛЕВСКИЙ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85fd"
+  },
+  "personName": "Николай ЛУКЬЯНЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85fe"
+  },
+  "personName": "Борис ЭБЗЕЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc85ff"
+  },
+  "personName": "Пётр ПОПОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8600"
+  },
+  "personName": "Олег НИКОЛАЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8601"
+  },
+  "personName": "Гаяз АКЧУРИН"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8602"
+  },
+  "personName": "Евгений ХАРИЧКИН"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8603"
+  },
+  "personName": "Елена ОГОЛЬ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8604"
+  },
+  "personName": "Николай СЕМИСОТОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8605"
+  },
+  "personName": "Владимир СИДОРЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8606"
+  },
+  "personName": "Сергей ВЕДЕНЕЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8607"
+  },
+  "personName": "Дмитрий ДИЛЬМАН"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8608"
+  },
+  "personName": "Ефим ШУСТЕРМАН"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8609"
+  },
+  "personName": "Олег МИЛЮКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc860a"
+  },
+  "personName": "Станислав КОРОТКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc860b"
+  },
+  "personName": "Андрей ВАЩЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc860c"
+  },
+  "personName": "Андрей ТАЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc860d"
+  },
+  "personName": "Евгений ВОЕВОДИН"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc860e"
+  },
+  "personName": "Антон ГУЗЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc860f"
+  },
+  "personName": "Андрей СОКОЛОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8610"
+  },
+  "personName": "Владимир ГЛУХОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8611"
+  },
+  "personName": "Александр БЕЛЯЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8612"
+  },
+  "personName": "Павел МИРОНЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8613"
+  },
+  "personName": "Ерагий ГИШЛАРКАЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8614"
+  },
+  "personName": "Ирина НИКУЙКО"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8615"
+  },
+  "personName": "Александр МОЛОЖАВЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8616"
+  },
+  "personName": "Владимир ЕФИМОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8617"
+  },
+  "personName": "Салават САБИРОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8618"
+  },
+  "personName": "Анатолий ЯКУНИН"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc8619"
+  },
+  "personName": "Владимир ПОПОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc861a"
+  },
+  "personName": "Александр НАЗАРОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc861b"
+  },
+  "personName": "Дмитрий ГРИГОРОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc861c"
+  },
+  "personName": "Владимир СТРУК"
+},{
+  "_id": {
+    "$oid": "5ee0616835c5cb2ff5dc861d"
+  },
+  "personName": "Игорь БУЛДЫГИН"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc861e"
+  },
+  "personName": "Игорь ГАЙДЫМ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc861f"
+  },
+  "personName": "Александр ЧУНАКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8620"
+  },
+  "personName": "Владимир ГОРДИН"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8621"
+  },
+  "personName": "Михаил ТАРАНЦОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8622"
+  },
+  "personName": "Андрей КУПРИКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8623"
+  },
+  "personName": "Ирина РАДЧЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8624"
+  },
+  "personName": "Александр МАСЛОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8625"
+  },
+  "personName": "Ирина КАРЕВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8626"
+  },
+  "personName": "Ирина ГУСЕВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8627"
+  },
+  "personName": "Александр ЕГОРОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8628"
+  },
+  "personName": "Андрей ГАВРИЛЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8629"
+  },
+  "personName": "Олег КЕРСАНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc862a"
+  },
+  "personName": "Сергей БОЖЕНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc862b"
+  },
+  "personName": "Сергей СОКОЛОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc862c"
+  },
+  "personName": "Андрей АКИМОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc862d"
+  },
+  "personName": "Анатолий БРОВКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc862e"
+  },
+  "personName": "Андрей НИКИТИН"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc862f"
+  },
+  "personName": "Юрий ИГУМОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8630"
+  },
+  "personName": "Елена ЕГОРОВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8631"
+  },
+  "personName": "Светлана ЛУЧИНА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8632"
+  },
+  "personName": "Ирина САМОХИНА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8633"
+  },
+  "personName": "Таисия СКОРОДЬКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8634"
+  },
+  "personName": "Елена ЛУКАШЕВИЧ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8635"
+  },
+  "personName": "Инна ГУСЕЙНОВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8636"
+  },
+  "personName": "Владимир ГАУШКИН"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8637"
+  },
+  "personName": "Андрей САМОХИН"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8638"
+  },
+  "personName": "Федор СОКОЛОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8639"
+  },
+  "personName": "Игорь СТЕФАНЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc863a"
+  },
+  "personName": "Василий ГАЛУШКИН"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc863b"
+  },
+  "personName": "Евгений АНИЩЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc863c"
+  },
+  "personName": "Лев АЛФЕРОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc863d"
+  },
+  "personName": "Роман СОЗАРУКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc863e"
+  },
+  "personName": "Олег ГРЕБЕНЮК"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc863f"
+  },
+  "personName": "Сергей ПОТАПЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8640"
+  },
+  "personName": "Михаил МУЗРАЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8641"
+  },
+  "personName": "Леонид БЕЛЯК"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8642"
+  },
+  "personName": "Александр КРАВЧЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8643"
+  },
+  "personName": "Евгений ЩУР"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8644"
+  },
+  "personName": "Сергей ШЕЛКУНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8645"
+  },
+  "personName": "Тамара ЧЕРНЯЕВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8646"
+  },
+  "personName": "Роланд ХЕРИАНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8647"
+  },
+  "personName": "Ирина ФОМИНА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8648"
+  },
+  "personName": "Наталья ТРУБИНА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8649"
+  },
+  "personName": "Светлана ТИТОВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc864a"
+  },
+  "personName": "Леонид ТИТОВ Александрович   "
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc864b"
+  },
+  "personName": "Виталий ПРОСВИРОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc864c"
+  },
+  "personName": "Андрей ОСИПОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc864d"
+  },
+  "personName": "Ольга ОРЛОВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc864e"
+  },
+  "personName": "Александр МОРДВИНЦЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc864f"
+  },
+  "personName": "Валерий МИРОНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8650"
+  },
+  "personName": "Дмитрий ЛУНЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8651"
+  },
+  "personName": "Федор ЛИТВИНЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8652"
+  },
+  "personName": "Вадим ЛИННИК"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8653"
+  },
+  "personName": "Александр ЛАЗАРЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8654"
+  },
+  "personName": "Анна КУВЫЧКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8655"
+  },
+  "personName": "Сергей КОНОВАЛОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8656"
+  },
+  "personName": "Александр КОЛЬЦОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8657"
+  },
+  "personName": "Валентин КЛЯУЗОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8658"
+  },
+  "personName": "Василий КИЯЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8659"
+  },
+  "personName": "Дмитрий КАЛАШНИКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc865a"
+  },
+  "personName": "Алексей ЗВЕРЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc865b"
+  },
+  "personName": "Алексей ЗВЕРЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc865c"
+  },
+  "personName": "Сергей ЗАБЕДНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc865d"
+  },
+  "personName": "Сергей ЕМЕЛЬЯНЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc865e"
+  },
+  "personName": "Галина ЕГОРОВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc865f"
+  },
+  "personName": "Михаил ДЕВЯТОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8660"
+  },
+  "personName": "Георгий ГОРЯЧЕВСКИЙ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8661"
+  },
+  "personName": "Андрей ГОРБАНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8662"
+  },
+  "personName": "Юрий ГОНЧАРОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8663"
+  },
+  "personName": "Евгений ГЛАЗКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8664"
+  },
+  "personName": "Алексей ВОЛОЦКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8665"
+  },
+  "personName": "Валерий ВАСИЛЬКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8666"
+  },
+  "personName": "Владимир ВАСИЛЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8667"
+  },
+  "personName": "Владимир БРОВКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8668"
+  },
+  "personName": "Борис БЛАГОСЛАВОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8669"
+  },
+  "personName": "Вера АРЕФЬЕВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc866a"
+  },
+  "personName": "Галина ХОРОШЕВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc866b"
+  },
+  "personName": "Александр ПЛОТНИКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc866c"
+  },
+  "personName": "Александр ШИЛИН"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc866d"
+  },
+  "personName": "Юрий СИЗОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc866e"
+  },
+  "personName": "Николай МАКСЮТА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc866f"
+  },
+  "personName": "Вадим ТКАЧЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8670"
+  },
+  "personName": "Изольда НЕСТЕРЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8671"
+  },
+  "personName": "Александр СВИДРОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8672"
+  },
+  "personName": "Александр БЕЛИЦКИЙ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8673"
+  },
+  "personName": "Роман ГРЕБЕННИКОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8674"
+  },
+  "personName": "Владимир МАРЧЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8675"
+  },
+  "personName": "Геннадий ШЕВЦОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8676"
+  },
+  "personName": "Валерий АНДРОНИК"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8677"
+  },
+  "personName": "Евгений КУЧЕРЯВЕНКО"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8678"
+  },
+  "personName": "Елена ПРОХОРОВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8679"
+  },
+  "personName": "Галина АЛИКОВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc867a"
+  },
+  "personName": "Александр БАЖЕНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc867b"
+  },
+  "personName": "Алексей СИВОКОЗ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc867c"
+  },
+  "personName": "Анатолий СЕБЕЛЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc867d"
+  },
+  "personName": "Станислав МАЛЫХ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc867e"
+  },
+  "personName": "МИХАИЛ БИТЮЦКИЙ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc867f"
+  },
+  "personName": "ЮРИЙ НАУРЗАЛИЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8680"
+  },
+  "personName": "СВЕТЛАНА МАТОВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8681"
+  },
+  "personName": "АННА ЧУПАХИНА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8682"
+  },
+  "personName": "ВИТАЛИЙ САЗОНОВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8683"
+  },
+  "personName": "ВИКТОРИЯ РОМАНОВА"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8684"
+  },
+  "personName": "АЛЕКСАНДР СТОРОЖУК"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8685"
+  },
+  "personName": "АЛЕКСЕЙ ШМЕЛЕВ"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8686"
+  },
+  "personName": "Алексей Глухов"
+},{
+  "_id": {
+    "$oid": "5ee0616935c5cb2ff5dc8687"
+  },
+  "personName": "Александр Клочков"
+}]
