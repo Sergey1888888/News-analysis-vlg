@@ -30,8 +30,8 @@ def get_synonyms(elements, count, model, spark_session):
 
 
 def main(word):
-    
-    if (not os.path.exists('../word2vec/model')):
+    os.chdir("../word2vec")
+    if (not os.path.exists('model')):
         if (not os.path.exists('data_text')):
             print("Папка создана")
             os.mkdir('data_text')
@@ -46,7 +46,9 @@ def main(word):
         .getOrCreate()
 
     model = Word2VecModel.load(PATH)
-
-    res = get_synonyms(word,5,model,spark)
+    
+    res = get_synonyms([word],5,model,spark)
     spark.stop()
+    os.chdir("../web")
     return res
+

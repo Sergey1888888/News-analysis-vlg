@@ -63,6 +63,7 @@ def findFact(id = None ):
             
     else: 
         print('Нету новый новостей на анализ')
+
         
 
 

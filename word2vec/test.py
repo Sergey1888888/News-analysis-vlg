@@ -4,8 +4,13 @@ PATH = 'model/kurs_model/'
 from pyspark.sql import SparkSession
 from pyspark.ml.feature import Word2VecModel
 from pprint import pprint
-
-test_words = ["алимов"]
+import os
+if (not os.path.exists('model')):
+    if (not os.path.exists('data_text')):
+        print("Папка создана")
+        os.mkdir('data_text')
+    newsToText(db.data)
+test_words = ["алимов","бочаров"]
 
 spark = SparkSession \
     .builder \

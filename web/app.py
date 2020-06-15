@@ -35,7 +35,7 @@ def skiplimit(db, collection, page_size, page_num):
 
 @app.route('/')
 def index():
-    return render_template('index.html', news=db.data.find().sort("_id", pymongo.DESCENDING).limit(15))
+    return render_template('index.html', news=db.data.find().sort("_id", pymongo.DESCENDING).limit(10))
 @app.route('/news/<id>/')
 def news_id(id):
     
@@ -59,13 +59,13 @@ def synonyms():
 
 @app.route('/api/getNews/<page_num>/', methods=['GET'])
 def get_news(page_num):
-    news = skiplimit(db,"data", 15,int(page_num))
+    news = skiplimit(db,"data", 10,int(page_num))
     result = JSONEncoder().encode(news)
     return jsonify(result)
 
 @app.route('/api/getFacts/<page_num>/', methods=['GET'])
 def get_facts(page_num):
-    news = skiplimit(db,"analysis",15,int(page_num))
+    news = skiplimit(db,"analysis",10,int(page_num))
     result = JSONEncoder().encode(news)
     return jsonify(result)
 

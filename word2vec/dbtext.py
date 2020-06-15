@@ -6,7 +6,7 @@ def newsToText(data):
 
     i = 0
     for text in data.find():
-        f2 = open('../word2vec/data_news/input'+str(i)+'.txt', 'w')  
+        f2 = open('data_news/input'+str(i)+'.txt', 'w')  
         f2.write(text.get("newsText"))
         f2.close()
         i = i +1

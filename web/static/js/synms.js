@@ -15,20 +15,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 function addNewWords(words){
-    const cont = document.getElementsByClassName('container')[1]
-    let ul = document.createElement('ul')
-    
-    let li = ""
-    for(let a of words){
-        
+    const cont = document.getElementsByTagName('tbody')[0]
 
-        li += `<li>${a} </li>`
+ 
+    for(let a of words){
+        let tr = document.createElement('tr')
+        tr.innerHTML = `<td>${a}</td> `
+        cont.appendChild(tr)
           
     }
-    ul.innerHTML = li;
-    cont.append('Введенное слово: '+word.value)
-    cont.append(document.createElement('br'))
-    cont.append('Синонимы: ')
-    cont.appendChild(ul)
+
 
 }
