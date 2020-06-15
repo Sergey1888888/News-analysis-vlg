@@ -1,5 +1,6 @@
 import os
 from pymongo import MongoClient
+
 def newsToText(data):
     if not os.path.isdir('data_news'):
         os.mkdir("data_news")
