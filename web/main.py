@@ -5,7 +5,9 @@ import pymongo
 import json
 from bson.objectid import ObjectId
 import datetime
-
+import sys
+sys.path.append("../word2vec/")
+from mainw2v import main as getSynms 
 app = Flask(__name__)
 client = MongoClient('45.11.24.111', username='mongo-root', password='passw0rd', authSource='admin')
 db = client.news
@@ -71,10 +73,15 @@ def get_facts(page_num):
 
 @app.route('/api/getSynm/<word>/', methods=['GET'])
 def get_synm(word):
-
-    return jsonify(db.synonyms.find_one({"word": word.lower()}).get('synom'))
+    syn = db.synonyms.find_one({"word": word.lower()})
+    if syn is None:
+        syn = getSynms(word.lower())
+        syn = db.synonyms.find_one({"word": word.lower()}).get('synom')
+    else:
+        syn=syn.get('synom')
+    return jsonify(syn)
 
 
 # jsonify
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',debug=True)
+    app.run(host='0.0.0.0',debug=False)
