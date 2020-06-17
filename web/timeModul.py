@@ -17,7 +17,7 @@ def run():
     tonality()
 
 run()
-schedule.every(60).minutes.do(run)
+schedule.every(360).minutes.do(run)
 while True:
     schedule.run_pending()
     time.sleep(1)
