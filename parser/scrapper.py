@@ -66,4 +66,3 @@ def run():
     except Exception:
         print('Произошел казус')
 
-run()
