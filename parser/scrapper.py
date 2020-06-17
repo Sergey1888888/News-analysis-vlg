@@ -58,11 +58,10 @@ async def main():
         data.update({u'newsDate': dates[i], u'newsName': titles[i], u'newsLink': newsLinks[i], u'newsText': texts[i]}, { u'$setOnInsert': { u'newsDate': dates[i], u'newsName': titles[i], u'newsLink': newsLinks[i], u'newsText': texts[i], u'forAnalysis': True } }, **{ 'upsert': True })
 
 def run():
-
     try:
         print('парсинг начался')
         asyncio.get_event_loop().run_until_complete(main())
-        print('парсинг закончин')
+        print('парсинг закончен')
     except Exception:
         print('Произошел казус')
 
